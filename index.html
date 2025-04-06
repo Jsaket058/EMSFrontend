@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EventHub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">EventVerse</div>
+    <div class="hamburger" onclick="toggleMenu(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">🏠 Home</a></li>
+      <li><a href="events.html">📅 Events</a></li>
+      <li><a href="login.html">🔐 Login</a></li>
+      <li><a href="register.html">📝 Register</a></li>
+    </ul>    
+  </nav>
+  
+
+  <!-- Hero Section with Background -->
+  <header class="hero-section">
+    <h1>Discover and Book Exciting Events</h1>
+  </header>
+
+  <!-- Events Container -->
+  <main>
+    <section class="events-container" id="events-container">
+      <!-- Cards will be injected here from JS -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 EventHub | Built with ❤️ by Saket</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

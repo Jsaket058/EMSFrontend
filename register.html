@@ -1,0 +1,28 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Event Platform</title>
+  <link rel="stylesheet" href="assets/css/register.css" />
+</head>
+<body>
+
+  <div class="register-container">
+    <h2>🎉 Register Now</h2>
+    <form id="registerForm">
+      <input type="email" id="email" placeholder="📧 Email" required />
+      <input type="password" id="password" placeholder="🔒 Password" required />
+      <select id="role" required>
+        <option value="">🧑‍💼 Choose Role</option>
+        <option value="ORGANIZER">Organizer</option>
+        <option value="ATTENDEE">Attendee</option>
+      </select>
+      <button type="submit">Sign Up 🚀</button>
+    </form>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>
