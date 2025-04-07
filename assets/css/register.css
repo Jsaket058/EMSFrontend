@@ -1,59 +1,60 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-    .register-container {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
-      padding: 2rem;
-      backdrop-filter: blur(15px);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-      width: 90%;
-      max-width: 400px;
-      color: #fff;
-    }
+.register-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  color: #fff;
+}
 
-    h2 {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
 
-    input, select {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      border: none;
-      outline: none;
-      background: rgba(0, 0, 0, 0.2);
-      color: #000000;
-    }
+input,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: #000000;
+}
 
-    button {
-      width: 100%;
-      padding: 0.75rem;
-      border: none;
-      border-radius: 8px;
-      background: #00c6ff;
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: #00c6ff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
-    button:hover {
-      background: #0072ff;
-    }
+button:hover {
+  background: #0072ff;
+}

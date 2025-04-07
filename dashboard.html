@@ -1,20 +1,22 @@
 <!-- dashboard.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Event Dashboard</title>
   <link rel="stylesheet" href="assets/css/dashboard.css" />
 </head>
+
 <body>
-    <header class="dashboard-header">
-        <div class="logo">🎟️ EventSphere</div>
-        <div class="welcome-text">
-          Welcome back, <span id="user-role">User</span>!
-        </div>
-        <button class="logout-btn" onclick="logout()">Logout</button>
-    </header>      
+  <header class="dashboard-header">
+    <div class="logo">🎟️ EventSphere</div>
+    <div class="welcome-text">
+      Welcome back, <span id="user-role">User</span>!
+    </div>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </header>
 
   <!-- Organizer Section -->
   <section id="organizer-section" class="role-section hidden">
@@ -35,26 +37,27 @@
       </div>
     </header>
     <section class="filter-section">
-        <label for="categoryFilter">Filter by Category:</label>
-        <select id="categoryFilter" onchange="searchEvents()">
-          <option value="">All</option>
-          <option value="CONFERENCE">Conference</option>
-          <option value="WORKSHOP">Workshop</option>
-          <option value="SEMINAR">Seminar</option>
-          <option value="CELEBRATION">Celebration</option>
-        </select>
-      </section>
-      <div id="booking-history-section" class="hidden">
-        <h2 id="change">My Bookings</h2>
-        <div id="booking-history"></div>
-      </div>
+      <label for="categoryFilter">Filter by Category:</label>
+      <select id="categoryFilter" onchange="searchEvents()">
+        <option value="">All</option>
+        <option value="CONFERENCE">Conference</option>
+        <option value="WORKSHOP">Workshop</option>
+        <option value="SEMINAR">Seminar</option>
+        <option value="CELEBRATION">Celebration</option>
+      </select>
+    </section>
+    <div id="booking-history-section" class="hidden">
+      <h2 id="change">My Bookings</h2>
+      <div id="booking-history"></div>
+    </div>
     <!-- List of available events -->
     <div id="available-events"></div>
   </section>
   <footer class="footer">
     <p>&copy; 2025 EventVerse | All rights reserved</p>
-  </footer> 
+  </footer>
 
   <script src="dashboard.js"></script>
 </body>
+
 </html>
