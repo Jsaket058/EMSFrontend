@@ -19,10 +19,10 @@ function getCategoryEmoji(category) {
 
 async function fetchEvents() {
   try {
-    const response = await fetch('http://localhost:8080/api/events/available'); // Adjust URL
+    const response = await fetch('http://localhost:8080/api/events/available');
     const events = await response.json();
 
-    events.forEach((event, index) => {
+    events.forEach((event) => {
       const card = document.createElement('div');
       card.className = 'event-card';
 
@@ -79,10 +79,10 @@ document.querySelectorAll('.events-container').forEach(card => {
 });
 
 function handleEventClick() {
-  const isLoggedIn = localStorage.getItem('token'); // We'll improve this later
+  const isLoggedIn = localStorage.getItem('token');
   if (!isLoggedIn) {
     alert('Please log in to view event details.');
-    window.location.href = 'login.html'; // We’ll build this page later
+    window.location.href = 'login.html';
   }
 }
 

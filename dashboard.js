@@ -42,9 +42,6 @@ function initDashboard() {
   document.getElementById("user-role").textContent = decoded.role;
   document.getElementById(`${role}-section`).classList.remove("hidden");
 
-  // Optional: apply theme
-  document.body.classList.add(`${role}-theme`);
-
   // Load data specific to role
   if (role === "organizer") {
     loadOrganizerEvents();
@@ -275,11 +272,11 @@ function editEvent(event) {
   });
 }
 
-function deleteEvent(eventId) {
+async function deleteEvent(eventId) {
   const confirmDelete = confirm("Are you sure you want to cancel this event?");
   if (!confirmDelete) return;
 
-  fetch(`${API_BASE}/${eventId}`, {
+  await fetch(`${API_BASE}/${eventId}`, {
     method: "DELETE",
     headers: getAuthHeader()
   })
